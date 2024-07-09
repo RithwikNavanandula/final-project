@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    upload
+{% endblock %}
+{% block main %}
+    <h2>Upload Video</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="video">Select video to upload:</label>
+        <input type="file" id="video" name="video" accept="video/*" placeholder="video" required><br><br>
+        <input type="submit" value="Upload">
+    </form>   
+{% endblock %}

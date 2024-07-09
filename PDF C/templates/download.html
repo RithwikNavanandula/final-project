@@ -1,0 +1,7 @@
+<ul>
+    {% for video in videos %}
+    <li>
+        <a href="{{ url_for('download_video', filename=video.filename) }}">{{ video.filename }}</a>
+    </li>
+    {% endfor %}
+</ul>

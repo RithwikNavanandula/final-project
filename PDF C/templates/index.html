@@ -1,0 +1,28 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">user_id</th>
+                <th scope="col">original video </th>
+                <th scope="col">compressed video</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>{% for row in rows %}
+            <li><a href="#" onclick="playVideo('{{ original }}')">{{ path.split('/')[-1] }}</a></li>
+            </td>
+        <td>
+            <li><a href="#" onclick="playVideo('{{ compressed }}')">{{ path.split('/')[-1] }}</a></li>
+        </td>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="../static/styles.css" rel="stylesheet">
+        <title>
+          {% block title %}{% endblock %}</title>
+      </head>
+    <body>
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html"><img src="https://yt3.googleusercontent.com/ytc/AIdro_m7MWMBm4PynPndRMCxUEfNcU9Eufkk5ZkYI5RNjPchQ_c=s900-c-k-c0x00ffffff-no-rj" width=100 height=100 alt="cat image">Cat(random)</a>
+                  <button onclick="clickr()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-100 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="my-ele" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./src1.html">2023</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="./src3.html">2022</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                          Era
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">B.C.</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">A.D.</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html" onclick="alert('The Power for Creating a better Future is contained in the Present moment. So please checkout other items which are related to today and stop concerning about the Future')">2025</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              </section>
+        <section>
+          <div class="container">
+            <div class="row">
+                {% block main %}{% endblock %}
+              </div>
+        </section>
+        <section id="social-media">
+          <div class="container text-center">
+           <div class="social-icons">
+            <p id="title71"> SOCIALS</p>
+            <a href="https://www.facebook.com/groups/cs50/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfbcYeYgf0wQJ-LSPm3CPbyB7T1p0f5bnaA&s" alt="logo"></a>
+            <a href="https://cs50.edx.org/slack"><img src="https://avatars.githubusercontent.com/u/6911160?s=280&v=4" alt="logo"></a>
+            <a href="https://www.reddit.com/r/cs50"><img src="https://play-lh.googleusercontent.com/FpCCoNLOt6LRIY_3NM5Rk_LDN-kFNz0yxdFjm-CYM4XavRQfoQlXxOtgC7abfexIDOE" alt="logo"></a>
+            <a href="https://instagram.com/cs50"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="logo"></a>
+            <a href="https://www.linkedin.com/groups/7437240/"><img src="https://media.licdn.com/dms/image/D4D12AQFSkkazpND0Tg/article-cover_image-shrink_720_1280/0/1696901179396?e=2147483647&v=beta&t=sy1mG4edVFhzPGGjPYoC7GZjph70EmjszvQYVjHV6PM" alt="logo" ></a>
+            <a href="./src2.html"><u>more</u></a>
+          </div>
+          </div>
+          </section>
+        <section id="footer">
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-4 footer-box">
+              <h4 class="footerheading"><b>Lorem ipsum</b></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, massa et bibendum blandit, sapien justo maximus arcu, ac dapibus justo arcu sit amet lectus. Nunc aliquam, massa non viverra ornare, risus neque euismod velit, sed efficitur lorem erat nec ligula. Morbi vestibulum porttitor nisi, in semper erat placerat a.</p>
+              </div>
+              <div class="col-md-4 footer-box">
+                <h4 class="footerheading"><b>CONTACT US</b></h4>
+                  <p>The Oval Office, Address: White House, Washington D.C.</p>
+                  <p>202-456-6213</p>
+                  <p>vice_president@whitehouse.gov</p>
+                </div>
+              <div class="col-md-4 footer-box">
+                <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKBv6h2or7T2RQ0v5K-RpyEW--Gl3GnCnfQ&s" alt="scratch cat image" class="float-end imgshadow me-3">Maecenas nconvallis blandit in, vehicula ut nunc. Aenean felis mauris, fermentum vitae libero sit amet, blandit accumsan lorem. Integer interdum, orci at congue efficitur, risus metus ultrices lorem, quis venenatis odio ex id libero. Nulla euismod porta convallis.</p>
+              </div>
+              <div>
+                <p class="copywrite">Owned by &copy; Lorem ipsum #1 fan</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+            function clickr(event)
+            {
+              location.href = "./index.html";
+            }
+        function loadVideo() {
+            const input = document.getElementById("input");
+            const video = document.getElementById("video");
+            const selectedFile = input.files[0];
+
+            if (selectedFile) {
+                const videoUrl = URL.createObjectURL(selectedFile);
+                video.src = videoUrl;
+                video.style.display = "block";
+                video.play();
+
+                // Save the video path (URL) in a string (optional)
+                const videoPath = videoUrl;
+                console.log("Video path:", videoPath);
+            }
+        }
+        </script>
+    </body>
+</html>
+ 
