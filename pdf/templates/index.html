@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">user_id</th>
+                <th scope="col">original video</th>
+                <th scope="col">original video size</th>
+                <th scope="col">time when uploades</th>
+                <th scope="col">compressed video</th>
+                <th scope="col">compressed video size</th>
+                <th scope="col">time when compressed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>{% for row in rows %}
+                <video controls class="video">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                {{ row["original_video_size"] }}
+            </td>
+            <td>
+                {{ row["upload_time"] }}
+            </td>
+            <td>
+                <video controls class="video">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                {{ row["compressed_video_size"] }}
+            </td>
+            <td>
+                {{ row["compressed_time"] }}
+            </td>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+{% endblock %}

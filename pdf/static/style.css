@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: sans-serif;
+  background-color: #cabebe;
+}
+  
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .navbar
+  {
+    background-image: linear-gradient(to right, #000000,#000000);
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .navbar-toggler
+  {
+    background-color: #ffffff;
+  }
+  .navbar-brand{
+    padding-left: 20px;
+    font-weight: 700;
+    float: left;
+    text-align: left;
+  }
+  
+  .login
+  {
+    align-self: center;
+  }
+  .navbar-nav li a {
+    color: #ffffff !important;
+    font-weight: 400;
+  }
+  
+  #banner
+  {
+    background-image: linear-gradient(to left, #fae1e1,#f0a5a5);
+    padding-top: 5%;
+    color: #000;
+  }
+  
+  .title23
+  {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .bottom-img
+  {
+    width: 100%;
+  }
+  
+  #stories
+  {
+    padding: 80px 80px;
+    margin-left: 80px;
+  }
+  .stories-img
+  {
+    padding: 50;
+  }
+  .img23{
+    margin-left: 200px;
+    padding: 100px;
+  }
+  
+  .stories h4
+  {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
+  
+  #stories .btn-primary
+  {
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #fae1e1,#f0a5a5);
+  }
+  
+  #footer
+  {
+    background-image: linear-gradient(to left, #87CEEB, #808080);
+    color: #000;
+    width: 100%;
+  }
+  
+  .footerheading
+  {
+    color: #000000;
+   font-size: 3rem;
+  }
+  
+  .footer-box
+  {
+    padding: 20px;
+  }
+  
+  .copywrite{
+    font-weight: 400;
+    color: #000000;
+  }
+  
+  .social-icons img
+  {
+    width: 60px;
+    transition: 0.5s;
+    padding: 10px;
+  }
+  .social-icons a:hover img
+  {
+    transform: translateY(-10px);
+  }
+  #title71
+  {
+    color: #FF746C;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  
+  #table1
+  {
+    padding: 150px;
+  }
+  
+  #first
+  {
+    padding-top: 100px;
+  }
+
+.arrow-button
+{
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000;
+  color: #ffffff;
+}
+.arrow-button::after
+{
+  content: '➾';
+  margin: 5px;
+}
+
+.video
+{
+  padding: 30px;
+  margin-top: 100px;
+}

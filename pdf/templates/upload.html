@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Upload
+{% endblock %}
+
+{% block main %}
+<div class="container py-5 text-center">
+    <video controls class="video">
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <button onclick="alert('Button Clicked!')" class="arrow-button">Compress</button>
+
+    <video controls class="vi">
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+{% endblock %}
